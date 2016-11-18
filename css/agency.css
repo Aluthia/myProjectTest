@@ -56,6 +56,18 @@ h6 {
   background-color: #222222;
 }
 
+.bg-black {
+  background-color: #000000;
+}
+
+.bg-dark-yellow {
+  background-color: #FED136;
+}
+
+.bg-light-yellow {
+  background-color: #FFFF00;
+}
+
 .btn-primary {
   color: white;
   background-color: #fed136;

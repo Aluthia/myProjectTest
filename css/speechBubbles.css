@@ -10,7 +10,7 @@ background: #FFFFFF;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
-border: #2F7F7F solid 10px;
+border: #FED136 solid 10px;
 }
 
 .bubble:after
@@ -34,7 +34,7 @@ content: '';
 position: absolute;
 border-style: solid;
 border-width: 39px 27px 0;
-border-color: #2F7F7F transparent;
+border-color: #FED136 transparent;
 display: block;
 width: 0;
 z-index: 0;
@@ -53,7 +53,7 @@ background: #FFFFFF;
 -webkit-border-radius: 10px;
 -moz-border-radius: 10px;
 border-radius: 10px;
-border: #2F7F7F solid 10px;
+border: #FED136 solid 10px;
 }
 
 .bubbleRight:after
@@ -77,7 +77,7 @@ content: '';
 position: absolute;
 border-style: solid;
 border-width: 39px 27px 0;
-border-color: #2F7F7F transparent;
+border-color: #FED136 transparent;
 display: block;
 width: 0;
 z-index: 0;
