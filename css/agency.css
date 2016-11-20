@@ -239,10 +239,18 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../asset/background/black.jpg');
+  /*background-image: url('../asset/background/black.jpg');*/
+  /*background-image: url('http://image.shutterstock.com/z/stock-photo-concrete-wall-and-ceiling-lamps-130264325.jpg'); */
+
+  background-image: url('http://image.shutterstock.com/z/stock-photo-blurred-of-office-ideal-for-presentation-background-356416148.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
+
+  /* filter for grayscale
+  filter:grayscale(50%); */
+
+
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -778,3 +786,59 @@ body {
                 padding: 20px 0px; }
 @media all and (max-width: 991px) {
 .map-outer  { height: 650px }
+
+/*video player*/
+.video-section .pattern-overlay {
+background-color: rgba(71, 71, 71, 0.59);
+padding: 110px 0 32px;
+min-height: 496px;
+/* Incase of overlay problems just increase the min-height*/
+}
+.video-section h1, .video-section h3{
+text-align:center;
+color:#fff;
+}
+.video-section h1{
+font-size:110px;
+font-weight:bold;
+text-transform: uppercase;
+margin: 40px auto 0px;
+text-shadow: 1px 1px 1px #000;
+-webkit-text-shadow: 1px 1px 1px #000;
+-moz-text-shadow: 1px 1px 1px #000;
+}
+.video-section h3{
+font-size: 25px;
+font-weight:lighter;
+margin: 0px auto 15px;
+}
+.video-section .buttonBar{display:none;}
+.player {font-size: 1px;}
+/*end video player*/
+
+/** video player2 */
+video#bgvid {
+    position: relative;
+    zoom: 200%;
+    filter:grayscale(100%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(polina.jpg) no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-device-width: 800px) {
+    html {
+         background: url(polina.jpg) #000 no-repeat center center fixed;
+    }
+    #bgvid {
+        display: none;
+    }
+}

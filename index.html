@@ -83,24 +83,57 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in"></div>
-                <div class="intro-heading">Need background img</div>
-                <div class="row">
-                    <span class="fa-stack fa-5x">
-                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                      <i class="fa fa-shopping-bag fa-stack-1x fa-inverse"></i>
-                  </span>
-                    <span class="fa-stack fa-5x">
-                      <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                      <i class="fa fa-truck fa-stack-1x fa-inverse"></i>
-                  </span>
+              <div class="row">
+                  <div class="col-lg-12 text-center">
+                      <span class="fa-stack fa-5x">
+                        <img src="asset/CrossTrack_logo_pathed.png" class="img-responsive">
+                    </span>
+                      <!--h2 class="section-heading">CrossTrack</h2-->
+                      <h3 class="section-subheading text-muted">At CrossTrack, your business is our business.</h3>
+                  </div>
+              </div>
+                <div class="intro-lead-in">
 
                 </div>
+
+              </div>
+
             </div>
         </div>
     </header>
 
-    <!-- Services Section -->
+
+    <!--Video Section
+<section class="content-section video-section">
+  <div class="pattern-overlay">
+  <a id="bgndVideo" class="player" data-property="{videoURL:'https://thumbs.dreamstime.com/videothumb_large6406/64066785.mp4',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <h1>Full Width Video</h1>
+        <h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
+	   </div>
+      </div>
+    </div>
+  </div>
+</section>
+Video Section Ends Here-->
+
+<!-- video section test
+<section>
+  <div class="container-fluid">
+    <div class="col-ld-12">
+      <video playsinline autoplay muted loop poster="" id="bgvid">
+          <source src="polina.webm" type="video/webm">
+          <source src="https://thumbs.dreamstime.com/videothumb_large6406/64066785.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+-->
+
+
+    <!-- Services Section
     <section id="services">
         <div class="container">
             <div class="row">
@@ -114,6 +147,7 @@
             </div>
         </div>
     </section>
+  -->
 <!--
     <section id="customerWriteup" class="bg-black">
         <div class="container-fluid col-ld-12">
@@ -570,6 +604,7 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
+                        <li><a href="#faqModal" data-toggle="modal">F.A.Q</a>
                         <li><a href="http://control.crosstrack.sg/privacy_policy/">Privacy Policy</a>
                         </li>
                         <li><a href="http://control.crosstrack.sg/terms_of_use/">Terms of Use</a>
@@ -579,6 +614,50 @@
             </div>
         </div>
     </footer>
+
+    <!-- faq modal -->
+    <div class="portfolio-modal modal fade" id="faqModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                  <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>FAQ</h2>
+                                <br>
+                                <div>
+
+                                <ol class="text-left">
+                                  <li>
+                                    <h5>Do you offer a standard pricing structure?</h5>
+                                    <p>For Ad Hoc jobs, you may refer to our pricing guide that is available after an account had been registered. If you have any special requirements, feel free to call us directly at 635 44 635 or shoot an email to info@crosstrack.sg (we will normally get back to you within the next 2 hours.)</p>
+                                  </li>
+
+                                  <li>
+                                    <h5>How do I post jobs?</h5>
+                                    <p>Register for an account with us, and once your account is activated, you will be able to post your job under ‘Post Job’ tab.</p>
+
+                                  <li>
+                                    <h5>Your stated pricing is out of my budget. Is there any way we can discuss about the pricing? </h5>
+                                      <p>Our state pricing is fixed at the moment. However if you have a large volume of deliveries to be made, or an alternative proposal, do give us a call at 635 44 635 or drop us an mail at info@crosstrack.sg and we will get back to you within the next 2 hours.</p>
+                                  </li>
+                                </ol>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 
 
@@ -650,7 +729,14 @@
       }
 
       google.maps.event.addDomListener(window, 'load', init_map);
+    </script>
+    <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+    <script>
+        $(document).ready(function () {
 
+        $(".player").mb_YTPlayer();
+
+    });
     </script>
 </body>
 
