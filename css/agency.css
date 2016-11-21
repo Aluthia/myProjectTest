@@ -13,6 +13,10 @@ body {
 .text-muted {
   color: #777777;
 }
+.text-dark {
+  color: #222222;
+}
+
 .text-primary {
   /*color: #fed136;*/
   color: #fed136;
