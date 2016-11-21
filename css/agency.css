@@ -7,10 +7,14 @@ body {
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+.text-white {
+  color: #cccccc;
+}
 .text-muted {
   color: #777777;
 }
 .text-primary {
+  /*color: #fed136;*/
   color: #fed136;
 }
 p {
@@ -49,11 +53,16 @@ h6 {
 .img-centered {
   margin: 0 auto;
 }
+
+.bg-lightest-gray {
+  background-color:#F8F8F8;
+}
 .bg-light-gray {
   background-color: #eeeeee;
 }
 .bg-darkest-gray {
   background-color: #222222;
+
 }
 
 .bg-black {
@@ -194,6 +203,7 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
+  text-shadow: 2px 2px 4px #000000;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -580,7 +590,6 @@ aside.clients img {
   margin: 50px auto;
 }
 section#contact {
-  background-color: #222222;
   background-image: url('');
   background-position: center;;
   background-repeat: repeat;;
