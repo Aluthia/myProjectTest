@@ -188,21 +188,21 @@ Video Section Ends Here-->
     <section id="customerWriteup">
         <div class="container-fluid">
           <div class="row text-center">
-            <div class="container col-md-4">
+            <div class="container col-md-4 jumpIn">
               <div class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-muted"></i>
                   <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
               </div>
               <h3 class="text-muted">Reliable deliveries?</h3>
             </div>
-            <div class="container col-md-4">
+            <div class="container col-md-4 jumpIn">
               <div class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-muted"></i>
                   <i class="fa fa-users fa-stack-1x fa-inverse"></i>
               </div>
               <h3 class="text-muted">Countless questions from customers?</h3>
             </div>
-            <div class="container col-md-4">
+            <div class="container col-md-4 jumpIn">
               <div class="fa-stack fa-4x">
                   <i class="fa fa-circle fa-stack-2x text-muted"></i>
                   <i class="fa fa-rocket fa-stack-1x fa-inverse"></i>
@@ -215,21 +215,21 @@ Video Section Ends Here-->
     <section id="customerWriteup" class="bg-darkest-gray">
         <div class="container-fluid text-primary">
           <div class="row text-center">
-            <div class="container col-md-4">
+            <div class="container col-md-4 jumpIn">
               <div class="fa-stack fa-4x">
                   <!--i class="fa fa-circle fa-stack-2x"></i-->
                   <i class="fa fa-thumbs-up fa-stack-1x text-primary"></i>
               </div>
               <h3>Reliable deliveries?</h3>
             </div>
-            <div class="container col-md-4">
+            <div class="container col-md-4 jumpIn">
               <div class="fa-stack fa-4x">
                   <!--i class="fa fa-circle fa-stack-2x"></i-->
                   <i class="fa fa-users fa-stack-1x text-primary"></i>
               </div>
               <h3>Countless questions from customers?</h3>
             </div>
-            <div class="container col-md-4">
+            <div class="container col-md-4 jumpIn">
               <div class="fa-stack fa-4x">
                   <!--i class="fa fa-circle fa-stack-2x"></i-->
                   <i class="fa fa-rocket fa-stack-1x text-primary"></i>
@@ -711,7 +711,7 @@ Video Section Ends Here-->
                 scale: 1.0
             };
 
-            window.sr = ScrollReveal(config).reveal('.bubbleRight');
+            window.sr = ScrollReveal(config).reveal('.jumpIn', { duration: 300 }, 200);
 
             if (sr.isSupported()) {
                 document.documentElement.classList.add('sr');
@@ -743,14 +743,7 @@ Video Section Ends Here-->
 
       google.maps.event.addDomListener(window, 'load', init_map);
     </script>
-    <script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
-    <script>
-        $(document).ready(function () {
 
-        $(".player").mb_YTPlayer();
-
-    });
-    </script>
 </body>
 
 </html>
