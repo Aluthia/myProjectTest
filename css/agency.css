@@ -207,7 +207,10 @@ fieldset[disabled] .btn-xl.active {
   font-weight: 400;
   letter-spacing: 1px;
   color: white;
+
   text-shadow: 2px 2px 4px #000000;
+  -webkit-text-shadow: 2px 2px 4px #000000;
+  -moz-text-shadow: 2px 2px 4px #000000;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
@@ -255,8 +258,15 @@ fieldset[disabled] .btn-xl.active {
 header {
   /*background-image: url('../asset/background/black.jpg');*/
   /*background-image: url('http://image.shutterstock.com/z/stock-photo-concrete-wall-and-ceiling-lamps-130264325.jpg'); */
-
+  /* the "blur" background
   background-image: url('http://image.shutterstock.com/z/stock-photo-blurred-of-office-ideal-for-presentation-background-356416148.jpg');
+  */
+  background-image: url('http://image.shutterstock.com/z/stock-photo-shipping-delivery-and-logistics-technology-business-industrial-concept-macro-view-of-heap-of-258562583.jpg');
+/*
+  background-image: url('http://image.shutterstock.com/z/stock-photo-moving-boxes-at-a-new-home-d-rendering-200422295.jpg');
+  background-image: url('http://image.shutterstock.com/z/stock-photo-technology-home-and-lifestyle-concept-smiling-man-with-laptop-credit-card-and-cardboard-boxes-241815763.jpg');
+*/
+  background-image: url('http://image.shutterstock.com/z/stock-photo-hand-giving-a-box-out-of-laptop-screen-online-shopping-concept-320822441.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -271,6 +281,7 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
+
 }
 header .intro-text {
   padding-top: 100px;
@@ -310,6 +321,10 @@ header .intro-text .intro-heading {
     font-size: 75px;
     line-height: 75px;
     margin-bottom: 50px;
+
+    text-shadow: 2px 2px 4px #000000;
+    -webkit-text-shadow: 2px 2px 4px #000000;
+    -moz-text-shadow: 2px 2px 4px #000000;
   }
 }
 section {
