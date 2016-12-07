@@ -268,7 +268,7 @@ header {
 */
   background-image: url('http://image.shutterstock.com/z/stock-photo-hand-giving-a-box-out-of-laptop-screen-online-shopping-concept-320822441.jpg');
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-position: center center;
 
   /* filter for grayscale
@@ -610,8 +610,8 @@ aside.clients img {
 }
 section#contact {
   background-image: url('');
-  background-position: center;;
-  background-repeat: repeat;;
+  background-position: center;
+  background-repeat: repeat;
 }
 section#contact .section-heading {
   color: white;
@@ -662,6 +662,33 @@ section#contact :-ms-input-placeholder {
 section#contact .text-danger {
   color: #e74c3c;
 }
+section#concept {
+background: url('../img/concept.png') no-repeat center center fixed;
+display: table;
+height: relative;
+min-height: 500px;
+position: relative;
+width: 100%;
+-webkit-background-size: 70%;
+-moz-background-size: 70%;
+-o-background-size: 70%;
+background-size: 70%;
+}
+
+section#joinus{
+  background: url('http://media.istockphoto.com/photos/office-laptop-picture-id496686760?s=2048x2048') no-repeat center center fixed;
+  display: table;
+  height: relative;
+  min-height: 500px;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+
 footer {
   padding: 25px 0;
   text-align: center;
@@ -921,4 +948,20 @@ body {
             transform: translate3d(0, 0, 0);
     left: 0;
   }
+}
+
+.equal {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+div[class*='col-'] {
+  flex:1 1 auto;
+  display: flex;
+}
+.well {
+  flex:1 0 100%;
 }
