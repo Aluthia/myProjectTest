@@ -302,6 +302,8 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 25px;
 }
+
+
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
@@ -676,10 +678,10 @@ background-size: 70%;
 }
 
 section#joinus{
-  background: url('http://media.istockphoto.com/photos/office-laptop-picture-id496686760?s=2048x2048') no-repeat center center fixed;
+  background: url('https://image.shutterstock.com/z/stock-photo-handsome-young-adult-showing-something-on-his-computer-to-a-group-of-three-male-and-female-casually-400694107.jpg') no-repeat center center fixed;
   display: table;
   height: relative;
-  min-height: 500px;
+  min-height: 200px;
   position: relative;
   width: 100%;
   -webkit-background-size: contain;
@@ -836,10 +838,21 @@ body {
 }
 
 .map-outer {height: 440px; padding: 20px; border: 2px solid #CCC; margin-bottom: 20px; background-color:#FFF }
-.map-container { height: 300px;
-                padding: 20px 0px; }
+  .map-container { height: 300px;
+                  padding: 20px 0px; }
+  @media all and (max-width: 991px) {
+  .map-outer  { height: 650px }
 
+  .bg-gray-round {
+      background-color: #eee;
+  }
 
+  .container .bg-gray-round,
+  .container-fluid .bg-gray-round {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 6px;
+  }
 }
 
 
@@ -948,4 +961,174 @@ body {
 
 .well {
   flex:1 0 100%;
+}
+
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+
+section#pricingtable .membership-pricing-table {
+    width: 920px
+}
+
+section#pricingtable .membership-pricing-table table .icon-no,.membership-pricing-table table .icon-yes {
+    font-size: 22px
+}
+
+section#pricingtable .membership-pricing-table table .icon-info {
+    font-size: 13px;
+}
+
+section#pricingtable .membership-pricing-table table .icon-no {
+    color: #a93717
+}
+
+section#pricingtable .membership-pricing-table table .icon-yes {
+    color: #209e61
+}
+
+section#pricingtable .membership-pricing-table table .icon-info {
+    color: #808080;
+}
+
+section#pricingtable .membership-pricing-table table .plan-header {
+    text-align: center;
+    font-size: 48px;
+    border: 1px solid #e2e2e2;
+    padding: 25px 0
+}
+
+section#pricingtable .membership-pricing-table table .plan-header-free {
+    background-color: #eee;
+    color: #555
+}
+
+section#pricingtable .membership-pricing-table table .plan-header-blue {
+    color: #fff;
+    background-color: #61a1d1;
+    border-color: #3989c6
+}
+
+section#pricingtable .membership-pricing-table table .plan-header-standard {
+    color: #fff;
+    background-color: #ff9317;
+    border-color: #e37900
+}
+
+section#pricingtable .membership-pricing-table table td {
+    text-align: center;
+    width: 15%;
+    padding: 7px 10px;
+    background-color: #fafafa;
+    font-size: 14px;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
+    box-shadow: 0 1px 0 #fff inset
+}
+
+section#pricingtable .membership-pricing-table table,.membership-pricing-table table td {
+    border: 1px solid #ebebeb
+}
+
+section#pricingtable .membership-pricing-table table tr td:first-child {
+    background-color: transparent;
+    text-align: right;
+    width: 24%
+}
+
+section#pricingtable .membership-pricing-table table tr td:nth-child(5) {
+    background-color: #FFF
+}
+
+section#pricingtable .membership-pricing-table table tr:first-child td,.membership-pricing-table table tr:nth-child(2) td {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+section#pricingtable .membership-pricing-table table tr:first-child th:first-child {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #e2e2e2
+}
+
+section#pricingtable .membership-pricing-table table tr:first-child th .pricing-plan-name {
+    font-size: 22px
+}
+
+section#pricingtable .membership-pricing-table table tr:first-child th .pricing-plan-price {
+    line-height: 35px
+}
+
+section#pricingtable .membership-pricing-table table tr:first-child th .pricing-plan-price>sup {
+    font-size: 45%
+}
+
+section#pricingtable .membership-pricing-table table tr:first-child th .pricing-plan-price>span {
+    font-size: 30%
+}
+
+section#pricingtable .membership-pricing-table table tr:first-child th .pricing-plan-period {
+    margin-top: -7px;
+    font-size: 25%
+}
+
+section#pricingtable .membership-pricing-table table .header-plan-inner {
+    position: relative
+}
+
+section#pricingtable .membership-pricing-table table .recommended-plan-ribbon {
+    box-sizing: content-box;
+    background-color: #dc3b5d;
+    color: #FFF;
+    position: absolute;
+    padding: 3px 6px;
+    font-size: 11px!important;
+    font-weight: 500;
+    left: -6px;
+    top: -22px;
+    z-index: 99;
+    width: 100%;
+    -webkit-box-shadow: 0 -1px #c2284c inset;
+    box-shadow: 0 -1px #c2284c inset;
+    text-shadow: 0 -1px #c2284c
+}
+
+section#pricingtable .membership-pricing-table table .recommended-plan-ribbon:before {
+    border: solid;
+    border-color: #c2284c transparent;
+    border-width: 6px 0 0 6px;
+    bottom: -5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    z-index: 90
+}
+
+section#pricingtable .membership-pricing-table table .recommended-plan-ribbon:after {
+    border: solid;
+    border-color: #c2284c transparent;
+    border-width: 6px 6px 0 0;
+    bottom: -5px;
+    content: "";
+    right: 0;
+    position: absolute;
+    z-index: 90
+}
+
+section#pricingtable .membership-pricing-table table .plan-head {
+    box-sizing: content-box;
+    background-color: #ff9c00;
+    border: 1px solid #cf7300;
+    position: absolute;
+    top: -33px;
+    left: -1px;
+    height: 30px;
+    width: 100%;
+    border-bottom: none
 }
