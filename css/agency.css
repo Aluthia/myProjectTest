@@ -688,7 +688,6 @@ section#joinus{
   background-size: contain;
 }
 
-
 footer {
   padding: 25px 0;
   text-align: center;
@@ -839,22 +838,11 @@ body {
 .map-outer {height: 440px; padding: 20px; border: 2px solid #CCC; margin-bottom: 20px; background-color:#FFF }
 .map-container { height: 300px;
                 padding: 20px 0px; }
-@media all and (max-width: 991px) {
-.map-outer  { height: 650px }
 
-.bg-gray-round {
-    background-color: #eee;
-}
 
-.container .bg-gray-round,
-.container-fluid .bg-gray-round {
-  padding-right: 15px;
-  padding-left: 15px;
-  border-radius: 6px;
 }
 
 
-/* carousel */
 .carousel-showmanymoveone .carousel-control {
   width: 4%;
   background-image: none;
@@ -958,10 +946,6 @@ body {
   display: flex;
 }
 
-div[class*='col-'] {
-  flex:1 1 auto;
-  display: flex;
-}
 .well {
   flex:1 0 100%;
 }
