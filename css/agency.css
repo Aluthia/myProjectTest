@@ -975,7 +975,7 @@ body {
 }
 
 section#pricingtable .membership-pricing-table {
-    width: 920px
+    width: 100%
 }
 
 section#pricingtable .membership-pricing-table table .icon-no,.membership-pricing-table table .icon-yes {
@@ -1130,5 +1130,23 @@ section#pricingtable .membership-pricing-table table .plan-head {
     left: -1px;
     height: 30px;
     width: 100%;
-    border-bottom: none
+    border-bottom: none;
+}
+
+.flex, .flex > div[class*='col-'] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex:1 0 auto;
+}
+
+section#termsOfUse {
+  padding: 0;
+}
+
+section#termsOfUse tr, td {
+  vertical-align: top;
+  padding: 0px 10px;
 }
