@@ -83,7 +83,7 @@
           <div class="row">
             <div class="col-lg-12 text-center">
               <span class="fa-stack fa-5x">
-                <img src="img/company/CrossTrack_logo_pathed.png" class="img-responsive">
+                <img src="img/CrossTrack_logo_pathed.png" class="img-responsive">
               </span>
             </div>
           </div>
@@ -102,10 +102,10 @@
                 <a role="button" href="http://control.crosstrack.sg/login/" class="btn btn-xl"><i class="fa fa-2x fa-truck" aria-hidden="true"></i>&nbsp; Start Shipping</a>
               </div>
               <div class="col-md-3">
-                <a role="button" href="#contact" class="btn btn-xl page-scroll"><i class="fa fa-2x fa-file-text" aria-hidden="true"></i>&nbsp; Request a Quote</a>
+                <a role="button" href="#contact" class="btn btn-xl page-scroll btn-hide"><i class="fa fa-2x fa-file-text" aria-hidden="true"></i>&nbsp; Request a Quote</a>
               </div>
               <div class="col-md-3">
-                <a role="button" href="http://control.crosstrack.sg/login/" class="btn btn-xl"><i class="fa fa-2x fa-map-marker" aria-hidden="true"></i>&nbsp; Track Order</a>
+                <a role="button" href="http://control.crosstrack.sg/login/" class="btn btn-xl btn-hide"><i class="fa fa-2x fa-map-marker" aria-hidden="true"></i>&nbsp; Track Order</a>
               </div>
             </div>
           </div>
@@ -165,42 +165,39 @@
                     <h2 class="text-center"><u>Why CrossTrack?</u></h2>
                     <br>
                     <div class="row flex">
-                    <div class="col-md-4">
-                      <div class="well text-center">
-                        <span class="fa-stack fa-4x text-center">
-                          <img src="img/icon/trophy.png" class="img-responsive">
-                        </span>
-
-                        <h3>Comprehensive Service</h3>
-                        <p class="text-left">
-                            From Couriers to Movers, Freelancers to Professional Transport companies, we partner with them all to bring you the connection to whole industry in one place.
-                        </p>
-                      </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="well text-center">
-                            <span class="fa-stack fa-4x text-center">
-                              <img src="img/icon/checklist.png" class="img-responsive">
-                            </span>
-
-                          <h3>We put effort to understand your needs</h3>
+                      <div class="col-md-4">
+                        <div class="well text-center">
+                          <span class="fa-stack fa-4x text-center">
+                            <img src="img/icon/trophy.png" class="img-responsive">
+                          </span>
+                          <h3>Comprehensive Service</h3>
                           <p class="text-left">
-                              We do not just accept your job and mass spam to our partners. We understand and profile your delivery needs then recommend it to partners who specialize in it. Thus, providing you the best service standard from specialist at competitive rates.
+                              From Couriers to Movers, Freelancers to Professional Transport companies, we partner with them all to bring you the connection to whole industry in one place.
                           </p>
+                        </div>
                       </div>
-                    </div>
-                    <div class="col-md-4">
-                      <div class="well text-center">
-                        <span class="fa-stack fa-4x text-center">
-                          <img src="img/icon/package.png" class="img-responsive">
-                        </span>
-                        <h3>Fast and Simple</h3>
-                        <p class="text-left">
-                            Request your delivery here and we do the rest for you.
-                        </p>
-
+                      <div class="col-md-4">
+                        <div class="well text-center">
+                              <span class="fa-stack fa-4x text-center">
+                                <img src="img/icon/checklist.png" class="img-responsive">
+                              </span>
+                            <h3>We put effort to understand your needs</h3>
+                            <p class="text-left">
+                                We do not just accept your job and mass spam to our partners. We understand and profile your delivery needs then recommend it to partners who specialize in it. Thus, providing you the best service standard from specialist at competitive rates.
+                            </p>
+                        </div>
                       </div>
-                    </div>
+                      <div class="col-md-4">
+                        <div class="well text-center">
+                          <span class="fa-stack fa-4x text-center">
+                            <img src="img/icon/package.png" class="img-responsive">
+                          </span>
+                          <h3>Fast and Simple</h3>
+                          <p class="text-left">
+                              Request your delivery here and we do the rest for you.
+                          </p>
+                        </div>
+                      </div>
                   </div>
                 </div>
             </div>
@@ -422,25 +419,25 @@
               </div>
               <!-- send message -->
               <div class="col-md-8">
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form name="sentMessage" id="contactForm" action="mailto:info@crosstrack.sg" method="post" enctype="text/plain" novalidate>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                <input type="text" class="form-control" placeholder="Your Name *" id="name" name="name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                <input type="email" class="form-control" placeholder="Your Email *" id="email" name="email" required data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="form-group">
-                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" name="tel" required data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                <textarea class="form-control" placeholder="Your Message *" id="message" name="Message" required data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -990,7 +987,7 @@
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <!--script src="js/contact_me.js"></script-->
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
     <!--script src="js/animateSlideIn.js"></script-->

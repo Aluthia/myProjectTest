@@ -172,6 +172,14 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
+
+@media (max-width: 1024px) {
+  .btn-hide {
+    /*background-color: transparent;*/
+    display: none;
+  }
+}
+
 .navbar-custom {
   background-color: #222222;
   border-color: transparent;
@@ -261,12 +269,13 @@ header {
   /* the "blur" background
   background-image: url('http://image.shutterstock.com/z/stock-photo-blurred-of-office-ideal-for-presentation-background-356416148.jpg');
   */
-  background-image: url('http://image.shutterstock.com/z/stock-photo-shipping-delivery-and-logistics-technology-business-industrial-concept-macro-view-of-heap-of-258562583.jpg');
+  background-image: url('../img/337H.jpg');
 /*
   background-image: url('http://image.shutterstock.com/z/stock-photo-moving-boxes-at-a-new-home-d-rendering-200422295.jpg');
   background-image: url('http://image.shutterstock.com/z/stock-photo-technology-home-and-lifestyle-concept-smiling-man-with-laptop-credit-card-and-cardboard-boxes-241815763.jpg');
-*/
+
   background-image: url('http://image.shutterstock.com/z/stock-photo-hand-giving-a-box-out-of-laptop-screen-online-shopping-concept-320822441.jpg');
+*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -301,6 +310,10 @@ header .intro-text .intro-heading {
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 25px;
+
+  text-shadow: 2px 2px 4px #000000;
+  -webkit-text-shadow: 2px 2px 4px #000000;
+  -moz-text-shadow: 2px 2px 4px #000000;
 }
 
 
@@ -678,16 +691,21 @@ background-size: 70%;
 }
 
 section#joinus{
-  background: url('https://image.shutterstock.com/z/stock-photo-handsome-young-adult-showing-something-on-his-computer-to-a-group-of-three-male-and-female-casually-400694107.jpg') no-repeat center center fixed;
+  /*background: url('https://image.shutterstock.com/z/stock-photo-handsome-young-adult-showing-something-on-his-computer-to-a-group-of-three-male-and-female-casually-400694107.jpg') no-repeat center center fixed;
+  */
+  background-image: url('../img/111H.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
   display: table;
   height: relative;
   min-height: 200px;
   position: relative;
   width: 100%;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 footer {
@@ -1139,7 +1157,15 @@ section#pricingtable .membership-pricing-table table .plan-head {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    flex:1 0 auto;
+    flex:1 1 auto;
+    flex-flow: row nowrap;
+}
+
+@media all and (max-width: 768px) {
+  .flex {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
 }
 
 section#termsOfUse {
